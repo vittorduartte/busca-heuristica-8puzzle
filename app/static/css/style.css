@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 400;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    margin: 5px 0;
+    min-width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #474747;
+    color: #fff;
+    transition: box-shadow 0.2s;
+}
+
+button:hover {
+    box-shadow: 0 0 1em #474747;
+}
+
+#resolver {
+    background-color: #f17300;
+    transition: box-shadow 0.2s;
+}
+#resolver:hover {
+    box-shadow: 0 0 1em #f17300;
+}
+
+.is-loading {
+    font-size: 16px;
+    animation: spin 1s linear infinite !important;
+} @keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+input {
+    min-width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: unset;
+    font-size: 18px;
+    box-shadow: 0 0 0 0.125em rgb(72, 95, 199, 0.25);
+    padding: 5px;
+}
+
+input::placeholder {
+    opacity: 0.3;
+}
+input:focus-visible {
+    margin: none;
+    outline: none;
+}
+
+.menu__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+li.move {
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.2s;
+}
+.move:hover {
+    background-color: #f17300;
+    color: #fff;
+}
+
+.overlay {
+    display: none;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(241, 115, 0, 0.5);
+    transition: 0.2s;
+}
+
+.wrapper {
+    display: flex;
+    width: 1350px;
+    margin-top: 60px;
+}
+
+.board {
+    display: grid;
+    grid-template: repeat(3, 33.33%) / repeat(3, 33.33%);
+    margin: 0 auto;
+    padding: 12px;
+    width: 416px;
+    height: 416px;
+    border-radius: 5px;
+    background-color: #474747;
+}
+
+.board__element:not(.is-gap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #f17300;
+    cursor: pointer;
+
+    font-size: 45px;
+    font-weight: 500;
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+.board__element.is-selected {
+    border: #f8ba7f solid 2px;
+}
+
+.painel-a,
+.painel-b {
+    width: 450px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.path {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.path_time {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #f17300;
+}
+
+.information {
+    font-size: 20px;
+}
+
+.information li {
+    margin-left: 10px;
+    font-weight: 500;
+    margin: 10px 0;
+}
