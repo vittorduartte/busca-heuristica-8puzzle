@@ -19,9 +19,9 @@ Este é um projeto que visa implementar um ambiente backend e frontend para um a
    </a>
 </p>
 
-## 🛠 Preparando o ambiente:
+## 🛠 Preparando o ambiente
 
-## 💻 Algoritmo A*:
+## 💻 Algoritmo A*
 
-## 📋 References
+## 📋 Referências
 Jinyue Han – [YouTube](https://www.youtube.com/channel/UCm_-D0nt_k2xXyMPwDmeVUA) – [Github](https://github.com/JaneHJY)
