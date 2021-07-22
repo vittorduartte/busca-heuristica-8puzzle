@@ -23,5 +23,5 @@ Este é um projeto que visa implementar um ambiente backend e frontend para um a
 
 ## 💻 Algoritmo A*:
 
-## 📋 Meta
-Jinyue Han (Reference)– [YouTube](https://www.youtube.com/channel/UCm_-D0nt_k2xXyMPwDmeVUA) – [Github](https://github.com/JaneHJY)
+## 📋 References
+Jinyue Han – [YouTube](https://www.youtube.com/channel/UCm_-D0nt_k2xXyMPwDmeVUA) – [Github](https://github.com/JaneHJY)
