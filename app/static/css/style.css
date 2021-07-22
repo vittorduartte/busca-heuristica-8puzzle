@@ -6,7 +6,7 @@
     font-weight: 400;
 }
 
-button {
+button.puzzle-button {
     border: 0;
     border-radius: 5px;
     margin: 5px 0;
@@ -18,7 +18,7 @@ button {
     transition: box-shadow 0.2s;
 }
 
-button:hover {
+button.puzzle-button:hover {
     box-shadow: 0 0 1em #474747;
 }
 
@@ -39,7 +39,7 @@ button:hover {
     }
 }
 
-input {
+input.puzzle-input {
     min-width: 210px;
     height: 40px;
     border-radius: 5px;
@@ -58,11 +58,16 @@ input:focus-visible {
     outline: none;
 }
 
+.menu {
+    margin-top: 40px;
+}
+
 .menu__wrapper {
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    width: 800px;
+    width: 950px;
 }
 
 ul {
@@ -156,4 +161,12 @@ h2 {
     margin-left: 10px;
     font-weight: 500;
     margin: 10px 0;
+}
+
+.footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    background-color: #f17300;
+    margin-top: 20px;
 }
