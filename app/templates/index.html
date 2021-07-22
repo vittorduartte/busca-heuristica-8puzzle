@@ -6,16 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algoritmos de Busca - Jogo dos 15</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+        integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <section class="hero is-link">
+        <div class="hero-body">
+            <p class="title">
+                Busca Heurística A*: Jogo dos 8
+            </p>
+            <p class="subtitle">
+                Este é um projeto que visa implementar um ambiente backend e frontend para um algoritmo de busca para uma solução do Jogos dos 8 (8s Puzzle).
+            </p>
+        </div>
+    </section>
     <div class="menu">
         <div class="menu__wrapper">
-            <input class="input-board" type="text" placeholder="Ex:1,2,3,4,5,6,7,8,0">
-            <button id="text-board">Definir</button>
-            <button id="shuffle">Embaralhar</button>
-            <button id="resolver">Resolver</button>
+            <h3>Painel:</h4>
+            <input class="input-board puzzle-input" type="text" placeholder="Ex:1,2,3,4,5,6,7,8,0">
+            <button class="puzzle-button" id="text-board">Definir</button>
+            <button class="puzzle-button" id="shuffle">Embaralhar</button>
+            <button class="puzzle-button" id="resolver">Resolver</button>
         </div>
     </div>
     <div class="overlay">
@@ -57,7 +73,7 @@
                 8
             </div>
             <div class="board__element is-gap" id="3x3">
-                
+
             </div>
         </div>
         <div class="painel-b">
@@ -66,13 +82,22 @@
                 Sem informação do caminho
             </ul>
             <div class="path_time">
-            Sem informação de tempo
+                Sem informação de tempo
             </div>
         </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Busca Heurística A*: Jogo dos 8</strong> by <a href="https://github.com/vittorduartte">Mateus Vitor</a>. O projeto está disponível no  <a href="https://github.com/vittorduartte/busca-heuristica-8puzzle">repositório</a> do github.
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
